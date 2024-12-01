@@ -67,4 +67,17 @@ public class Patient {
     public void setPat_sub_date(Date pat_sub_date) {
         this.pat_sub_date = pat_sub_date;
     }
+
+
+   @Override
+    public String toString() {
+        return "\tPatient Information:\n" +
+               "\tNumber: " + this.getPatientNb() + "\n" +
+               "\tLast Name: " + this.getPat_lastname() + "\n" +
+               "\tFirst Name: " + this.getPat_firstname() + "\n" +
+               "\tAddress: " + this.getPat_address() + "\n" +
+               "\tTelephone: " + this.getPat_tel() + "\n" +
+               "\tInsurance ID: " + this.getPat_insurance_id() + "\n" +
+               "\tSubscription Date: " + this.getPat_sub_date();
+    }
 }
